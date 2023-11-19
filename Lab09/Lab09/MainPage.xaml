@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab09.MainPage">
+
+    <StackLayout Background="white">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="ButtonBlackStyle" TargetType="Button">
+                    <Setter Property="TextColor" Value="white"></Setter>
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <StackLayout BackgroundColor="Black" MinimumWidthRequest="500">
+            <Label Text="XAMARIN: Gesture" HorizontalOptions="Center" TextColor="White" FontSize="24" Margin="0,80"/>
+        </StackLayout>
+        <StackLayout>
+            <Button x:Name="Item1" Text="Pan Demo" BackgroundColor="#9AD0C2" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item2" Text="Pinch Demo" BackgroundColor="#2D9596" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item3" Text="Swipe Demo" BackgroundColor="#265073" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item4" Text="Tap Control Demo" BackgroundColor="#1640D6" Style="{StaticResource ButtonBlackStyle}"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
